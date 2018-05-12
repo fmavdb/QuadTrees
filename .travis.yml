@@ -1,16 +1,6 @@
 language: csharp
-dist: trusty
-mono:
-  - latest
-git:
-  depth: 300
+mono: none
+solution: QuadTrees.sln
+dotnet: 2.0.0
 install:
-  - sudo apt-get -qq install nunit-console realpath
-
-script:
-  - bash travis-ci/autoversion.sh QuadTrees
-  - export EnableNuGetPackageRestore=false
-  - cert-sync /etc/ssl/certs/ca-certificates.crt
-  - xbuild CI.proj
-  - sudo nunit-console -framework=4.0 ./QuadTrees.Tests/bin/Debug/QuadTrees.Tests.dll -exclude Integration,NotWorkingOnMono
-  - travis_retry bash travis-ci/nuget-upload.sh
+  - dotnet restore
