@@ -30,7 +30,7 @@ namespace QuadTrees.Tests
         [TestCase]
         public void TestListQuery()
         {
-            QuadTreePointF<QTreeObject> qtree = new QuadTreePointF<QTreeObject>();
+            var qtree = new QuadTreePointF<QTreeObject>();
             qtree.AddRange(new List<QTreeObject>
             {
                 new QTreeObject(new PointF(10,10)),
