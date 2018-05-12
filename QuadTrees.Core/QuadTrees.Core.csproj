@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>QuadTrees.Core</AssemblyName>
+    <RootNamespace>QuadTrees</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="QTreePoint\IPointQuadStorable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QTreePoint\QuadTreePointNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="QuadTreePoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
