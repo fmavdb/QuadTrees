@@ -6,4 +6,4 @@ dotnet: 2.0.0
 script:
 - dotnet build QuadTrees.Core/QuadTrees.Core.csproj
 - dotnet test QuadTrees.Core.Tests/QuadTrees.Core.Tests.csproj
-- dotnet nuget push QuadTrees.1.0.0.nupkg -k oy2apmxmsyiysldhb4gaqd5jzqflmcveriwfzqyk7r4je4 -s https://api.nuget.org/v3/index.json
+- dotnet nuget push ./QuadTrees.Core/bin/Release/QuadTrees.1.0.0.nupkg -k oy2apmxmsyiysldhb4gaqd5jzqflmcveriwfzqyk7r4je4 -s https://api.nuget.org/v3/index.json
