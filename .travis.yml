@@ -6,3 +6,4 @@ dotnet: 2.0.0
 script:
 - dotnet build QuadTrees.Core/QuadTrees.Core.csproj
 - dotnet test QuadTrees.Core.Tests/QuadTrees.Core.Tests.csproj
+- dotnet publish QuadTrees.Core/QuadTrees.Core.csproj

@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>QuadTrees.Core</AssemblyName>
     <RootNamespace>QuadTrees</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/fmavdb/QuadTrees</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/fmavdb/QuadTrees</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
