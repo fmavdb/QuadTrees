@@ -3,8 +3,6 @@ dist: trusty
 mono: none
 solution: QuadTrees.sln
 dotnet: 2.0.0
-install:
-- dotnet restore
 script:
-- dotnet build
+- dotnet build QuadTrees.Core/QuadTrees.Core.csproj
 - dotnet test QuadTrees.Tests/QuadTrees.Tests.csproj
